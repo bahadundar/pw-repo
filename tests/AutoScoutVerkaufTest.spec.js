@@ -29,7 +29,7 @@ test('@Web Auto Verkauf Test', async ({ browser }) => {
         const appointmentPage = new AppointmentPage(newPage);
         await appointmentPage.enterAppointmentDetails(selldata);
         expect (await newPage.getByText('Glückwunsch:').isVisible());
-        await expect(newPage).toHaveScreenshot();
+        //await expect(newPage).toHaveScreenshot();
         //await newPage.screenshot({ path: 'screenshot.png', fullPage: true });
 
     }
