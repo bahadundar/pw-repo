@@ -41,5 +41,15 @@ test('@Web Auto Verkauf Test', async ({ browser }) => {
 })
 
 
+test.only('@Web AutoScout24', async ({ browser }) => {
+    const context = await browser.newContext();
+    const page = await context.newPage();
+    const sellpage = new SellPage(page);
+    await page.goto("https://www.autoscout24.de/auto-verkaufen/");
+    //const framePage= page.frameLocator("//iframe[@name='__tcfapiLocator']");
+ 
+})
+
+
 
 
